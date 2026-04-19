@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Marco Roth</title>
+    <meta name="description" content="Dr. Marco Roth — Quantum computing researcher at Fraunhofer IPA Stuttgart. Research in quantum machine learning, quantum algorithms, and quantum-based optimization.">
+    <meta name="author" content="Dr. Marco Roth">
+    <meta property="og:title" content="Dr. Marco Roth — Quantum Computing Researcher">
+    <meta property="og:description" content="Researcher at the intersection of quantum computing and artificial intelligence. Co-lead of flaQship at Fraunhofer IPA Stuttgart.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dr. Marco Roth — Quantum Computing Researcher">
+    <meta name="twitter:description" content="Researcher at the intersection of quantum computing and artificial intelligence at Fraunhofer IPA Stuttgart.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a1a1a'/><text x='50' y='68' font-family='Inter,sans-serif' font-size='42' font-weight='600' fill='%23fcfcfc' text-anchor='middle'>MR</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 5rem; /* Adjust this value to match your nav height */
+        }
+        body { font-family: 'Inter', sans-serif; color: #1a1a1a; background-color: #fcfcfc; scroll-behavior: smooth; }
+        .section-label { @apply text-xs uppercase tracking-widest text-gray-400 font-semibold sticky top-32; }
+        .nav-link { @apply hover:text-black transition-colors duration-200; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full bg-[#fcfcfc]/95 backdrop-blur-md z-50" aria-label="Main navigation">
+        <div class="max-w-5xl mx-auto px-8 md:px-16 py-8 flex md:grid md:grid-cols-4 md:gap-12 items-center text-sm text-gray-500">
+            <div class="md:col-span-1 font-semibold text-black tracking-tight">
+                DR. MARCO ROTH
+            </div>
+            <button id="menu-toggle" class="ml-auto md:hidden text-gray-500" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')" aria-label="Toggle menu" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div class="md:col-span-3 hidden md:flex space-x-8">
+                <a href="#about" class="nav-link" data-nav>About</a>
+                <a href="#cv" class="nav-link" data-nav>CV</a>
+                <a href="#publications" class="nav-link" data-nav>Papers</a>
+                <a href="#contact" class="nav-link" data-nav>Contact</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 space-y-4 text-sm text-gray-500">
+            <a href="#about" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#cv" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">CV</a>
+            <a href="#publications" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">Papers</a>
+            <a href="#contact" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-8 md:px-16 pt-40 pb-32">
+        
+        <section id="about" class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-32">
+            <div class="md:col-span-1">
+                <h2 class="section-label">Introduction</h2>
+            </div>
+            <div class="md:col-span-3">
+                <p class="text-2xl font-light leading-relaxed text-gray-800">
+                    I am a researcher at the intersection of <span class="italic">quantum computing</span> and <span class="italic">artificial intelligence</span>. My research interests span from the application of machine learning techniques over quantum algorithms to quantum-based data processing to applications such as optimization and simulation. I currently work at Fraunhofer where I co-lead <a href="https://www.flaqship.eu" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-black transition-colors">flaQship</a> — the Fraunhofer Lab for Application-Oriented Quantum Computing in Stuttgart-Heilbronn.
+                </p>
+            </div>
+        </section>
+
+        <section id="cv" class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-32">
+            <div class="md:col-span-1">
+                <h2 class="section-label">Career</h2>
+            </div>
+            <div class="md:col-span-3 space-y-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-medium">Principal Investigator / Group Lead</div>
+                        <div class="text-sm text-gray-500">Quantum Computing Group, Fraunhofer IPA, Stuttgart</div>
+                    </div>
+                    <div class="text-sm text-gray-400 font-mono">2021 —</div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-medium">Data Scientist</div>
+                        <div class="text-sm text-gray-500">MAHLE GmbH, Stuttgart</div>
+                    </div>
+                    <div class="text-sm text-gray-400 font-mono">2019 — 2021</div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-medium">PhD Quantum Information Theory</div>
+                        <div class="text-sm text-gray-500">RWTH Aachen University, FZ Jülich, Aachen</div>
+                    </div>
+                    <div class="text-sm text-gray-400 font-mono">2016 — 2019</div>
+                </div>    
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-medium">M.Sc. Physics</div>
+                        <div class="text-sm text-gray-500">ETH Zürich, Heidelberg University, FZ Jülich, Aachen</div>
+                    </div>
+                    <div class="text-sm text-gray-400 font-mono">2014 — 2016</div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-medium">B.Sc. Physics</div>
+                        <div class="text-sm text-gray-500">Heidelberg University, Heidelberg</div>
+                    </div>
+                    <div class="text-sm text-gray-400 font-mono">2011 — 2014</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-32">
+            <div class="md:col-span-1">
+                <h2 class="section-label">Selected Works</h2>
+            </div>
+            <div class="md:col-span-3 space-y-10">
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">arXiv:2603.13073 [quant-ph] (2026)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://arxiv.org/abs/2603.13073" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Exponential Scaling Barriers for Variational Quantum Eigensolvers</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">M. Hagelüken, D. A. Kreplin, F. Wieland, M. F. Huber, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">arXiv:2603.06644 [quant-ph] (2026)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://arxiv.org/abs/2603.06644" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Quantum Deep Learning: A Comprehensive Review</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">Y. Ji, Z.-Y. Chen, <strong>M. Roth</strong>, D. A. Kreplin, C. Schiffer, M. King, O. Anton, M. S. Alam, M. Krutzik, D. Willsch, L. Mathey, F. K. Wilhelm, G.-P. Guo</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. Applied 25, 034051 (2026)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://journals.aps.org/prapplied/abstract/10.1103/5r9m-y6z6" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Data-Efficient Quantum Noise Modeling via Machine Learning</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">Y. Ji, <strong>M. Roth</strong>, D. A. Kreplin, I. Polian, F. K. Wilhelm</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">New Journal of Physics (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1088/1367-2630/add203" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Data Efficient Prediction of excited-state properties using Quantum Neural Networks</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">M. Hagelüken, M. F. Huber, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Quantum Machine Intelligence, 7, 58 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1007/s42484-025-00273-5" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Quantum Kernel Methods under Scrutiny: A Benchmarking Study</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">J. Schnabel, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Quantum Sci. Technol. 10 035051 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1088/2058-9565/ade7ad" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">On the similarity of bandwidth-tuned quantum kernels and classical kernels</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">R. F. Ablan, <strong>M. Roth</strong>, J. Schnabel</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Mach. Learn.: Sci. Technol. 6 015041 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1088/2632-2153/adaf75" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Reinforcement learning-based architecture search for quantum machine learning</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">F. Rapp, D. A. Kreplin, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">IEEE QSW, 81-91 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1109/qsw67625.2025.00019" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">AutoQML: A Framework for Automated Quantum Machine Learning</a></h3>
+                    <p class="text-sm text-gray-500 mt-2"><strong>M. Roth</strong>, D. A. Kreplin, D. Basilewitsch, et al.</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">IEEE Software, vol. 42, no. 5 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1109/ms.2025.3527736" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">sQUlearn: A Python Library for Quantum Machine Learning</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">D. A. Kreplin, M. Willmann, J. Schnabel, F. Rapp, M. Hagelüken, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Procedia CIRP Volume 134, 25-30 (2025)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1016/j.procir.2025.01.099" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Application of quantum annealing for scalable robotic assembly line optimization: a case study</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">M. Willmann, M. Albus, J. Schnabel, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Quantum, 8, 1385 (2024)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.22331/q-2024-06-25-1385" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Reduction of finite sampling noise in quantum neural networks</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">D. A. Kreplin, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">arXiv:2402.17542 [quant-ph] (2024)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://arxiv.org/abs/2402.17542" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">A heuristic for solving the irregular strip packing problem with quantum optimization</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">P. A. Matt, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Quantum Machine Intelligence 6, 5 (2024)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1007/s42484-023-00138-9" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Quantum Gaussian Process Regression for Bayesian Optimization</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">F. Rapp, <strong>M. Roth</strong></p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">arXiv:2209.07575 [cs.NE] (2022)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://arxiv.org/abs/2209.07575" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">A Nested Genetic Algorithm for Explaining Classification Data Sets with Decision Rules</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">P. A. Matt, R. Ziegler, D. Brajovic, <strong>M. Roth</strong>, M. F. Huber</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. A, 102, 062611 (2020)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1103/PhysRevA.102.062611" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Time-resolved tomography of a driven adiabatic quantum simulation</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">G. Salis, N. Moll, <strong>M. Roth</strong>, M. Ganzhorn, S. Filipp</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. Research, 1:033128 (2019)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1103/PhysRevResearch.1.033128" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Optimal gauge for the multimode Rabi model in circuit QED</a></h3>
+                    <p class="text-sm text-gray-500 mt-2"><strong>M. Roth</strong>, F. Hassler, D. P. DiVincenzo</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. Applied 11, 044092 (2019)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1103/PhysRevApplied.11.044092" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Gate-efficient simulation of molecular eigenstates on a quantum computer</a></h3>
+                    <p class="text-sm text-gray-500 mt-2">M. Ganzhorn, ..., <strong>M. Roth</strong>, et al.</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. A, 99, 022323 (2019)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1103/PhysRevA.99.022323" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Adiabatic quantum simulations with driven superconducting qubits</a></h3>
+                    <p class="text-sm text-gray-500 mt-2"><strong>M. Roth</strong>, N. Moll, G. Salis, M. Ganzhorn, D. J. Egger, S. Filipp, S. Schmidt</p>
+                </article>
+
+                <article class="group">
+                    <span class="text-xs font-mono text-gray-400">Phys. Rev. A, 96, 062323 (2017)</span>
+                    <h3 class="text-lg font-medium mt-1"><a href="https://doi.org/10.1103/PhysRevA.96.062323" target="_blank" rel="noopener noreferrer" class="group-hover:text-blue-600 transition-colors">Analysis of a parametrically driven exchange-type gate and a two-photon excitation gate between superconducting qubits</a></h3>
+                    <p class="text-sm text-gray-500 mt-2"><strong>M. Roth</strong>, M. Ganzhorn, N. Moll, S. Filipp, G. Salis, S. Schmidt</p>
+                </article>
+                <p class="text-sm text-gray-500 mt-6">
+                    Full list on <a href="https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=marco+roth&btnG=" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-black transition-colors">Google Scholar</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-gray-100 pt-16">
+            <div class="md:col-span-1">
+                <h2 class="section-label">Contact</h2>
+            </div>
+            <div class="md:col-span-3">
+                <p class="text-sm text-gray-600 leading-relaxed mb-6">
+                    Interested in a master thesis or open positions? Reach out to me on <a href="https://www.linkedin.com/in/marco-roth-5a2089107" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-black transition-colors font-medium">LinkedIn</a>.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-8 md:px-16 pb-12 text-[10px] uppercase tracking-widest text-gray-300">
+        &copy; 2026 Marco Roth. <a href="#impressum" class="hover:text-gray-500 transition-colors">Impressum</a>
+    </footer>
+
+    <section id="impressum" lang="de" class="max-w-5xl mx-auto px-8 md:px-16 pb-16 hidden target:block">
+        <div class="border-t border-gray-100 pt-12">
+            <h2 class="text-xs uppercase tracking-widest text-gray-400 font-semibold mb-6">Impressum</h2>
+            <div class="text-sm text-gray-500 space-y-4 leading-relaxed">
+                <div>
+                    <p class="font-medium text-gray-700">Angaben gemäß § 5 TMG</p>
+                    <p>Dr. Marco Roth</p>
+                    <p>Nobelstraße 12</p>
+                    <p>70569 Stuttgart</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700">Kontakt</p>
+                    <p>E-Mail: dr.marco.roth@proton.me</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</p>
+                    <p>Dr. Marco Roth</p>
+                    <p>Nobelstraße 12</p>
+                    <p>70569 Stuttgart</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700">Haftungsausschluss</p>
+                    <p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('a[data-nav]');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('text-black', link.getAttribute('href') === '#' + entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -80% 0px' });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
