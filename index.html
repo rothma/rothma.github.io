@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
     <title>Dr. Marco Roth</title>
     <meta name="description" content="Dr. Marco Roth — Quantum computing researcher heading Fraunhofer Research and Innovation Center Applied Quantum Artificial Intelligence Heilbronn. Research in quantum machine learning, quantum algorithms, and quantum-based optimization.">
     <meta name="author" content="Dr. Marco Roth">
@@ -13,17 +14,9 @@
     <meta name="twitter:title" content="Dr. Marco Roth — Quantum Computing Researcher">
     <meta name="twitter:description" content="Researcher at the intersection of quantum computing and artificial intelligence at Fraunhofer HNFIZ Heilbronn.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a1a1a'/><text x='50' y='68' font-family='Inter,sans-serif' font-size='42' font-weight='600' fill='%23fcfcfc' text-anchor='middle'>MR</text></svg>">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/tailwind.css">
+    <script src="/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        html { 
-            scroll-behavior: smooth; 
-            scroll-padding-top: 5rem; /* Adjust this value to match your nav height */
-        }
-        body { font-family: 'Inter', sans-serif; color: #1a1a1a; background-color: #fcfcfc; scroll-behavior: smooth; }
-        .section-label { @apply text-xs uppercase tracking-widest text-gray-400 font-semibold sticky top-32; }
-        .nav-link { @apply hover:text-black transition-colors duration-200; }
-    </style>
 </head>
 <body class="antialiased">
 
@@ -32,7 +25,7 @@
             <div class="md:col-span-1 font-semibold text-black tracking-tight">
                 DR. MARCO ROTH
             </div>
-            <button id="menu-toggle" class="ml-auto md:hidden text-gray-500" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')" aria-label="Toggle menu" aria-expanded="false">
+            <button id="menu-toggle" class="ml-auto md:hidden text-gray-500" aria-label="Toggle menu" aria-expanded="false">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
@@ -45,10 +38,10 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 space-y-4 text-sm text-gray-500">
-            <a href="#about" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-            <a href="#cv" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">CV</a>
-            <a href="#publications" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">Papers</a>
-            <a href="#contact" class="block nav-link" data-nav onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            <a href="#about" class="block nav-link" data-nav>About</a>
+            <a href="#cv" class="block nav-link" data-nav>CV</a>
+            <a href="#publications" class="block nav-link" data-nav>Papers</a>
+            <a href="#contact" class="block nav-link" data-nav>Contact</a>
         </div>
     </nav>
 
@@ -76,49 +69,49 @@
                         <div class="font-medium">Head of Quantum Machine Learning</div>
                         <div class="text-sm text-gray-500">Fraunhofer IAO, Heilbronn</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2026 —</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2026 —</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">Group Lead Quantum Computing</div>
                         <div class="text-sm text-gray-500">Fraunhofer IPA, Stuttgart</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2022 — 2026</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2022 — 2026</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">Quantum Computing Scientist</div>
                         <div class="text-sm text-gray-500">Fraunhofer IPA, Stuttgart</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2021 — 2022</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2021 — 2022</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">Data Scientist</div>
                         <div class="text-sm text-gray-500">MAHLE GmbH, Stuttgart</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2019 — 2021</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2019 — 2021</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">PhD Quantum Information Theory</div>
                         <div class="text-sm text-gray-500">RWTH Aachen University, FZ Jülich, Aachen</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2016 — 2019</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2016 — 2019</div>
                 </div>    
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">M.Sc. Physics</div>
                         <div class="text-sm text-gray-500">ETH Zürich, Heidelberg University, FZ Jülich, Aachen</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2014 — 2016</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2014 — 2016</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
                         <div class="font-medium">B.Sc. Physics</div>
                         <div class="text-sm text-gray-500">Heidelberg University, Heidelberg</div>
                     </div>
-                    <div class="text-sm text-gray-400 font-mono">2011 — 2014</div>
+                    <div class="text-sm text-gray-400 font-mono whitespace-nowrap shrink-0 pl-4">2011 — 2014</div>
                 </div>
             </div>
         </section>
@@ -310,21 +303,5 @@
         </div>
     </section>
 
-    <script>
-        const sections = document.querySelectorAll('main section[id]');
-        const navLinks = document.querySelectorAll('a[data-nav]');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navLinks.forEach(link => {
-                        link.classList.toggle('text-black', link.getAttribute('href') === '#' + entry.target.id);
-                    });
-                }
-            });
-        }, { rootMargin: '-20% 0px -80% 0px' });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
 </body>
 </html>

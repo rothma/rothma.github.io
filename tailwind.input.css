@@ -1,0 +1,27 @@
+/*! GENERATED FILE - do not edit tailwind.css by hand. Edit tailwind.input.css and rebuild:
+    npx tailwindcss@3 -c tailwind.config.js -i tailwind.input.css -o tailwind.css --minify */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* matches the fixed nav height */
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background-color: #fcfcfc;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-xs uppercase tracking-widest text-gray-400 font-semibold sticky top-32;
+  }
+  .nav-link {
+    @apply hover:text-black transition-colors duration-200;
+  }
+}
